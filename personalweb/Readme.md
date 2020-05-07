@@ -5,7 +5,7 @@
 django2
 ```
 
-## install & usage
+## Install & usage
 
 
 ```
@@ -13,7 +13,7 @@ git clone https://github.com/erickTornero/django-projects.git
 ```
 
 ```
-cd personalweb/
+cd django-projects/personalweb/
 ```
 
 Create a superuser to access to the admin interface
