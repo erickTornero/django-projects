@@ -8,6 +8,7 @@ class Project(models.Model):
     image       =   models.ImageField(upload_to='projects')
     created     =   models.DateTimeField(auto_now_add=True)
     updated     =   models.DateTimeField(auto_now=True)
+    learnmore   =   models.URLField(max_length=200, blank=True, null=True)
 
 
     
