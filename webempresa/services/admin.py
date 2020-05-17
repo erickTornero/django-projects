@@ -1,9 +1,9 @@
 from django.contrib import admin
 
 # Register your models here.
-from services.models import ServiceModel
+from services.models import Service
 
-class ServiceModelAdmin(admin.ModelAdmin):
+class ServiceAdmin(admin.ModelAdmin):
     readonly_fields = ('created', 'updated')
 
-admin.site.register(ServiceModel, ServiceModelAdmin)
+admin.site.register(Service, ServiceAdmin)
