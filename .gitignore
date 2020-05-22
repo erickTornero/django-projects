@@ -1,0 +1,6 @@
+*__pycache__*
+*.vscode*
+*/media/*
+*.zip
+*db.sqlite3*
+*_Frontend*

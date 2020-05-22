@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'core',
     'services',
     'blog',
-    'social.apps.SocialConfig'
+    'social.apps.SocialConfig',
+    'pages.apps.PagesConfig',
+    'ckeditor', # download from pip install django-ckeditor
 ]
 
 MIDDLEWARE = [
@@ -131,3 +133,17 @@ STATICFILES_DIRS = [
 MEDIA_ROOT   =   'media/'
 
 MEDIA_URL  =   os.path.join(BASE_DIR, 'media/')
+
+# Ckeditor
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Custom',
+        'toolbar_Custom': [
+            ['Bold', 'Italic', 'Underline'],
+            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 
+             'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
+            ['Link', 'Unlink'],
+            ['RemoveFormat', 'Source']
+        ]
+    }
+}
