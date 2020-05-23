@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'social.apps.SocialConfig',
     'pages.apps.PagesConfig',
     'ckeditor', # download from pip install django-ckeditor
+    'contact',
 ]
 
 MIDDLEWARE = [
@@ -147,3 +148,8 @@ CKEDITOR_CONFIGS = {
         ]
     }
 }
+
+EMAIL_HOST = 'smtp.mailtrap.io'
+EMAIL_HOST_USER = '73784d33003fd3'
+EMAIL_HOST_PASSWORD = '5ec5e3321f803a'
+EMAIL_PORT = '2525'
